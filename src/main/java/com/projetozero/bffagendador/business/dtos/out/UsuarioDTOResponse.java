@@ -1,0 +1,18 @@
+package com.projetozero.bffagendador.business.dtos.out;
+
+import lombok.*;
+
+import java.util.List;
+
+@Getter
+@Setter
+@AllArgsConstructor
+@NoArgsConstructor
+@Builder
+public class UsuarioDTOResponse {
+
+    private String nome;
+    private String email;
+    private List<EnderecoDTOResponse> enderecos;
+    private List<TelefoneDTOResponse> telefones;
+}
